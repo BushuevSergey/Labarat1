@@ -8,6 +8,10 @@ int main() {
 	double side1, side2, side3;
 	cout << "Введите стороны треугольника: ";
 	cin >> side1 >> side2 >> side3;
+	if (side1 <= 0 || side2 <= 0 || side3 <= 0){
+		cout << "Такого треугольника не существуте" <<endl;
+		return 1;
+	}
 	if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) {
 		cout << "Такого треугольика не существует" << endl;
 		return 1;
