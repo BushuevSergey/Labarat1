@@ -11,6 +11,11 @@ int main() {
     cin >> a;
     cout << "Введите ширину прямоугольника: ";
     cin >> b;
+    while (a <= 0 || b <= 0) {
+        cout << "Ошибка! Повторите снова:";
+        cin >> a >> b;
+    }
+    
     
     // Вычисления
     double perimeter = 2 * (a + b);
@@ -24,4 +29,3 @@ int main() {
     
     return 0;
 }
-
